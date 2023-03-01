@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Calculadora Proposta WORC</title>
+
+    <link rel="shortcut icon" href="Worc-símbolo-oficial.png" />
+
+    <!-- endinject -->
+    <style media="screen">
+  .star-rating{
+    font-size: 0;
+  }
+  .star-rating__wrap{
+    display: inline-block;
+    font-size: 0.8rem;
+  }
+  .star-rating__wrap:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .star-rating__ico{
+    float: right;
+    padding-left: 2px;
+    cursor: pointer;
+    color: #FFB300;
+  }
+
+  .star-rating__ico_dis{
+    float: right;
+    padding-left: 2px;
+    cursor: pointer;
+    color: #999999;
+  }
+
+  .star-rating__ico:last-child{
+    padding-left: 0;
+  }
+  .star-rating__input{
+    display: none;
+  }
+  .star-rating__ico:hover:before,
+  .star-rating__ico:hover ~ .star-rating__ico:before,
+  .star-rating__input:checked ~ .star-rating__ico:before
+  {
+    content: "\f005";
+  }
+
+
+    </style>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+        <script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>  
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+$('.treina_opt').change(function(){
+if(this.checked)
+$('#universidade').fadeIn('slow');
+else
+$('#universidade').fadeOut('slow');
+
+});
+});
+    </script>
+
+<script type="text/javascript">
+      $(document).ready(function(){
+$('.admiss_opt').change(function(){
+if(this.checked)
+$('#admissao').fadeIn('slow');
+else
+$('#admissao').fadeOut('slow');
+
+});
+});
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+$('.treina_opt').change(function(){
+if(this.checked)
+$('#numero_de_casas').fadeIn('slow');
+else
+$('#numero_de_casas').fadeOut('slow');
+
+});
+});
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+$('.ponto_opt').change(function(){
+if(this.checked)
+$('#numero_de_casas').fadeIn('slow');
+else
+$('#numero_de_casas').fadeOut('slow');
+
+});
+});
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+$('.admiss_opt').change(function(){
+if(this.checked)
+$('#numero_de_casas').fadeIn('slow');
+else
+$('#numero_de_casas').fadeOut('slow');
+
+});
+});
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+$('.empreg_opt').change(function(){
+if(this.checked)
+$('#numero_de_casas').fadeIn('slow');
+else
+$('#numero_de_casas').fadeOut('slow');
+
+});
+});
+    </script>
+
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+$('.empreg_opt').change(function(){
+if(this.checked)
+$('#empreg_tot').fadeIn('slow');
+else
+$('#empreg_tot').fadeOut('slow');
+
+});
+});
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+$('.treina_opt').change(function(){
+if(this.checked)
+$('#treina_tot').fadeIn('slow');
+else
+$('#treina_tot').fadeOut('slow');
+
+});
+});
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+$('.ponto_opt').change(function(){
+if(this.checked)
+$('#ponto_tot').fadeIn('slow');
+else
+$('#ponto_tot').fadeOut('slow');
+
+});
+});
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+$('.admiss_opt').change(function(){
+if(this.checked)
+$('#admiss_tot').fadeIn('slow');
+else
+$('#admiss_tot').fadeOut('slow');
+
+});
+});
+    </script>
+
+  </head>
+
+  <body style="background-color: #C2DFFF">
+
+
+    <!-- partial -->
+          <div class="content-wrapper" style="margin-top: -70px">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="email">
+                      <div class="table-responsive mb-4">
+                        <table class="display_worc" cellpadding="0" cellspacing="0" border="0">
+                          <tr>
+                            <td style="padding: 50px;">
+                              <table style="width: 100%;height: 100%;margin: 0 auto" cellpadding="0" cellspacing="0" border="0">
+                                <tbody>
+
+                                <!-- INICIO LOGO -->
+
+                                    <td style="text-align: center;">
+                                      <img style="margin-bottom: -10px; width: 25%; height:  25%;" class="img-responsive" src="Worc-logotipo-oficial-horizontal.png" alt="WORC">
+
+                                    </td>
+
+                                <!-- FINAL LOGO -->
+                                  
+
+                                  <tr style="border-bottom:1px dashed #ddd;">
+                                    <td style="width: 175px;height: 20px;font-family: Roboto;font-size: 18px;font-weight: 500;font-style: normal;font-stretch: normal;line-height: 1.5;letter-spacing: normal;text-align: center;color: #001737;padding-bottom: 3px"> <h2>Calculadora de Proposta 
+
+                                    <br>
+
+
+                                  </h2></td>
+                                  </tr>
+
+                                  <tr>
+                                    <td style="border-radius: 10px;background: #fff;padding: 30px 60px 20px 60px;margin-top: 30px;display: block; width: 60%; margin-left: auto;margin-right: auto; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);">
+
+                                      <div class="yyy">
+                                          <label for="pswd">Insira a senha: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Submit" onclick="checkPswd();" />
+<!--Function to check password the already set password is admin-->
+                                      </div>
+
+                                      
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "Worc2023";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             $('.xxx').fadeIn('slow');
+             $('.yyy').fadeOut();
+        }
+        else{
+            alert("Senha inválida");
+        }
+    }
+</script>
+
+<div class="xxx" style="display: none">
+
+                                      <p>Olá!<br><br> Seja bem vindo à Calculadora de Propostas da Worc.<br><br> Para poder montar a sua proposta você vai precisar ter em mãos 3 dados principais do seu prospecto:</p>
+
+                                      <hr style="margin-bottom: 30px; margin-top: 30px">
+                                      
+
+                                      <h3>Simulador de Proposta</h3>
+                                      <p style="margin-top: -10px; color: #909497;">Insira os dados a respeito do cliente, selecione os planos ou produtos desejados e calcule os valores .</p>
+
+                                      <br>
+
+                                   <form name="submit-to-google-sheet"> 
+
+                                    <div class="form-group field" style="margin-bottom: 20px;">
+                                      <label for="userName">Nome Estabelecimento:</label>
+                                        <input name="nome_estabelecimento" class="abc" type="text"> 
+                                    </div>
+
+                                    <div class="form-group field" style="margin-bottom: 20px;">
+                                      <label for="userName">Responsável:</label>
+                                        <input name="responsavel" class="abc" type="text"> 
+                                    </div>
+
+                                    <div class="form-group" style="margin-bottom: 10px;">  
+                                      <label for="cars">AE (Closer): </label>
+                                        <select name="closer" class="abc" onchange="showDiv('hidden_div', this)">
+                                          <option value="">Selecione seu nome</option>
+                                          <option value="Astor Lopes">Astor Lopes</option>
+                                          <option value="Bruno Favero">Bruno Favero</option>
+                                          <option value="Gabriel Forbes">Gabriel Forbes</option>
+                                          <option value="Juliana Harari">Juliana Harari</option>
+                                          <option value="Matheus Guedes">Matheus Guedes</option>
+                                          <option value="Michel Trajtengertz">Michel Trajtengertz</option>
+                                          <option value="Renan Soares">Renan Soares</option>
+                                        </select>
+                                    </div>
+
+                                    <br>
+
+                                  <div id="hidden_div" style="display: none;">
+                                  
+
+                                    <div class="form-group" style="display: none;">
+                                      <input type="text" name="hello" oninput="CalcPlanFit();" id="mySelect">
+                                    </div>
+
+
+                                  <div class="form-group" style="margin-bottom: 0px;" id="produtos">  
+                                    <label for="cars">Produtos:</label>
+                                    <br>
+                                    <input type="checkbox" class="empreg_opt abc" name="product_one" value="Empregabilidade">
+                                    <label for="vehicle1"> Empregabilidade</label><br>
+                                    <input type="checkbox" class="treina_opt abc" name="product_two" value="Documentação">
+                                    <label for="vehicle2"> Treinamento</label><br>
+                                    <input type="checkbox" class="ponto_opt abc" name="product_three" value="Ponto Eletrônico">
+                                    <label for="vehicle3"> Ponto Eletrônico</label><br>
+                                    <input type="checkbox" class="admiss_opt abc" name="product_four" value="Educação">
+                                    <label for="vehicle3"> Admissão</label><br><br>
+                                  </div>
+
+                                  <br>
+
+                                  <input id="date" name="prop_date" style="display:none">
+
+                                  <div id="numero_de_casas" style="display: none;">
+
+                                      <div class="form-group field">  
+                                      <label>Número de Casas:</label>
+                                      <input type="text" id="num_casas" name="numero_casas" class="abc" value="" title="Quantidade de Acessos" oninput="CalcCasasMaior() ; CalcCasasPonto(); CalcColabs(); CalcEmpreg(); CalcTreina(); CalcPonto(); CalcAdmiss(); this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Ex: 5" style="margin-bottom: 20px;">
+                                    </div>
+
+                                    <div class="form-group field">  
+                                      <label>Colaboradores (no total):</label>
+                                      <input type="text" id="colab_casa" value="" class="abc" name="colabas_pcasa" oninput="CalcCasasMaior() ; CalcCasasPonto(); CalcColabs(); CalcEmpreg();CalcTreina(); CalcPonto(); CalcAdmiss(); this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Ex: 30" title="Qtde. Média de Propostas" style="margin-bottom: 20px;">
+                                    </div>
+
+                                  </div>
+
+                                    <div class="form-group" style="display: none;" id="admissao">  
+                                      <label>Admissões p/ Mês:</label>
+                                      <input type="text" id="adm_onb" value="" class="abc" name="admissao_mes" oninput="CalcCasasMaior() ; CalcCasasPonto(); CalcColabs(); CalcEmpreg();CalcTreina(); CalcPonto(); CalcAdmiss(); this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Ex: 30" title="Qtde. Média de Propostas" style="margin-bottom: 20px;">
+                                    </div>
+
+                                    <div class="form-group" style="display: none;" id="universidade">  
+                                      <label>Acessos à universidade:</label>
+                                      <input type="text" id="acessos_univ" value="" class="abc" name="acess_universidade" oninput="CalcCasasMaior() ; CalcCasasPonto(); CalcColabs(); CalcEmpreg();CalcTreina(); CalcPonto(); CalcAdmiss(); this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Ex: 30" title="Qtde. Média de Propostas" style="margin-bottom: 20px;">
+                                    </div>
+
+
+                                    </div>
+
+                                    </div>
+
+                                  <div style="display: none">
+
+                                    <div class="form-group" style="">
+                                      Multiplicador de Casas - Empregabilidade + Treinamento + Admissão
+                                      <input type="text" name="hello" id="acrescasas">
+                                    </div>
+
+                                    <div class="form-group" style="">
+                                      Multiplicador de Casas - Ponto Eletrônico
+                                      <input type="text" name="hello" id="acrescasasponto">
+                                    </div>
+
+                                    <div class="form-group" style="">
+                                      Multiplicador de Colabs (todos produtos)
+                                      <input type="text" name="hello" id="acrescolab">
+                                    </div>
+
+                                  </div>
+
+
+                                     <div class='actions'>
+
+                                    <button type="submit" class="btn-primary xxx" style="display: none" onclick="showPricePlan()" disabled="disabled">Ver proposta</button>
+                                  </div>
+                                  
+                              <hr style="margin-bottom: 30px; margin-top: 30px; display: none;" class="xxx">
+
+                                <div id="preco_geral" style="display: none">
+
+                                  <div id="plan_section" style="display: none" >
+
+                                  </form>  
+
+
+                                  </div>
+
+                                                           
+                                  <div id="prod_section" style="display: block">
+
+                                    <div class="form-group" style="font-size: 16px; display: none; margin-bottom: 20px;" id="empreg_tot">  
+                                      <label>Total Empregabilidade:</label>
+                                      <label for="dinheiro" style="color: #45b8e3">R$</label>
+                                      <input type="text" id="grandtotal_empreg" name="valor_tot_recru" placeholder="0" title="Total" readonly="true" style=" background-color: white; border: 1px solid transparent; pointer-events: none; color: #45b8e3; font-size: 16px">
+                                      <br><b style="font-size: 14px;"><i>*Taxa de implementação cobrada a parte</i></b>
+                                    </div>
+
+                                    <div class="form-group" style="font-size: 16px; display: none; margin-bottom: 20px;" id="treina_tot">  
+                                      <label>Total Treinamento:</label>
+                                      <label for="dinheiro" style="color: #45b8e3">R$</label>
+                                      <input type="text" id="grandtotal_treina" placeholder="0" name="valor_tot_doc" title="Total" readonly="true" style=" background-color: white; border: 1px solid transparent; pointer-events: none; color: #45b8e3; font-size: 16px">
+                                      <br><b style="font-size: 14px;"><i>*Taxa de implementação cobrada a parte</i></b>
+                                    </div>
+
+                                    <div class="form-group" style="font-size: 16px; display: none; margin-bottom: 20px;" id="ponto_tot">  
+                                      <label>Total Ponto Eletrônico:</label>
+                                      <label for="dinheiro" style="color: #45b8e3">R$</label>
+                                      <input type="text" id="grandtotal_ponto" placeholder="0" title="Total" name="valor_tot_onb" readonly="true" style="background-color: white; border: 1px solid transparent; pointer-events: none; color: #45b8e3; font-size: 16px">
+                                      <br><b style="font-size: 14px;"><i>*Taxa de implementação cobrada a parte</i></b>
+                                    </div>
+
+                                    <div class="form-group" style="font-size: 16px; display: none;" id="admiss_tot">  
+                                      <label>Total Admissão:</label>
+                                      <label for="dinheiro" style="color: #45b8e3">R$</label>
+                                      <input type="text" id="grandtotal_admiss" name="valor_tot_edu" placeholder="0" title="Total" readonly="true" style="background-color: white; border: 1px solid transparent; pointer-events: none; color: #45b8e3; font-size: 16px">
+                                      <br><b style="font-size: 14px;"><i>*Taxa de implementação cobrada a parte</i></b>
+                                    </div>
+
+                                    <br>
+
+                                    <a href="javascript:window.location.href=window.location.href" class="btn" style="background-color: #0171f5; color: white; padding: 5px; border-radius: 3px; text-decoration: none; font-size: 14px;">Refazer</a>
+
+                                  </div>
+
+
+                                  </div>
+
+                                  <br>
+
+                                    </td>
+                                  </tr>
+
+                                </tbody>
+                              </table>
+                              <table style="width:235px;height: 100%;margin: 20px auto 0 auto;" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td style="text-align: center">
+
+                                    <table style="margin-right:15px; display: inline;" cellpadding="0" cellspacing="0" border="0">
+                                      <tr>
+                                        <td style="background: #0f6a91;color:#2b80ff;border-radius: 100%;height: 35px;width: 35px; margin-right:20px;">
+                                        <a href="https://br.linkedin.com/company/worc-plataforma-de-empregabilidade" target="_blank">  
+                                          <i class="fa-brands fa-linkedin-in" title="Linked In" style="color: white;"></i>
+                                        </a> 
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table style="margin-right:15px; display: inline;" cellpadding="0" cellspacing="0" border="0">
+                                      <tr>
+                                        <td style="background: #0f6a91;color:#2b80ff;border-radius: 100%;height: 35px;width: 35px; margin-right:20px;">
+                                         <a href="https://www.instagram.com/worc.digital/?hl=pt" target="_blank">  
+                                          <i class="fa-brands fa-instagram" title="instagram" style="color: white;"></i>
+                                        </a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                    <table style="margin-right:15px; display: inline;" cellpadding="0" cellspacing="0" border="0">
+                                      <tr>
+                                        <td style="background: #0f6a91;color:#2b80ff;border-radius: 100%;height: 35px;width: 35px; margin-right:20px;">
+                                        <a href="https://worc.com.br/home" target="_blank">
+                                          <i class="fa-solid fa-globe" title="Site" style="color: white"></i>
+                                        </a>
+                                        </td>
+                                      </tr>
+                                    </table>                                    
+                                  </td>
+                                </tr>
+                              </table>
+                              <table style="margin: 20px auto 10px auto;" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                  <td style="font-family: Roboto;font-size: 14px;font-weight: normal;font-style: normal;font-stretch: normal;line-height: normal;letter-spacing: normal;color: black; text-align: center;"> Copyright © 2022 WORC. All rights reserved.</td>
+                                </tr>
+                                <tr>
+                                  <td style="font-family: Roboto;font-size: 14px;font-weight: normal;font-style:
+                                  normal;font-stretch: normal;line-height: normal;letter-spacing: normal;color:
+                                  #0d7da5;text-align: center; padding-top: 15px;"> Uma solução 360º para o seu negócio</a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    <!-- container-scroller -->
+    <!-- End custom js for this page -->
+
+    <script type="text/javascript">
+        function showPricePlan() {
+          document.getElementById('preco_geral').style.display = "block";
+          $(".abc").prop("readonly",true);
+          }
+      </script> 
+
+    <script type="text/javascript">
+
+      //Preço Mínimo
+      var PrecoMin = "";
+      var z = document.getElementById('preco_minimo');
+        z.innerHTML += PrecoMin;
+
+      //12x parcelado
+      var STPF = "";
+      var o = document.getElementById('parc_plan_fit');
+        o.innerHTML += STPF;
+
+      //2x parcelado
+      var Bol = "";
+      var b = document.getElementById('bol_plan_fit');
+      b.innerHTML += Bol;
+
+      //A Vista
+      var Vista = "";
+      var v = document.getElementById('vista_plan_fit');
+      v.innerHTML += Vista;
+
+  
+      function CalcCasasMaior() {
+
+        var NumCasas = document.getElementById('num_casas').value; 
+
+
+        if (NumCasas >= 1 && NumCasas <= 2) {
+          var AcresCasas = 1;
+        }
+
+        if (NumCasas > 2 && NumCasas <= 5) {
+          var AcresCasas = 1.1;
+        }
+
+        if (NumCasas > 6 && NumCasas <= 10) {
+          var AcresCasas = 1.2;
+        }
+
+        if (NumCasas > 11 && NumCasas <= 20) {
+          var AcresCasas = 1.25;
+        }
+
+        if (NumCasas > 21 && NumCasas <= 50) {
+          var AcresCasas = 1.30;
+        }
+
+
+
+        document.getElementById('acrescasas').value = AcresCasas;
+      }
+
+      function CalcCasasPonto() {
+
+        var NumCasas = document.getElementById('num_casas').value; 
+
+
+        if (NumCasas >= 1 && NumCasas <= 2) {
+          var AcresCasas = 1;
+        }
+
+        if (NumCasas > 2 && NumCasas <= 5) {
+          var AcresCasas = 1.2;
+        }
+
+        if (NumCasas > 6 && NumCasas <= 10) {
+          var AcresCasas = 1.5;
+        }
+
+        if (NumCasas > 11 && NumCasas <= 20) {
+          var AcresCasas = 1.8;
+        }
+
+        if (NumCasas > 21 && NumCasas <= 50) {
+          var AcresCasas = 2.1;
+        }
+
+
+
+        document.getElementById('acrescasasponto').value = AcresCasas;
+      }
+
+      function CalcColabs() {
+
+        var NumColabs = document.getElementById('colab_casa').value; 
+
+        if (NumColabs >= 1 && NumColabs <= 10) {
+          var AcresColabs = 0.5;
+        }
+
+        if (NumColabs > 11 && NumColabs <= 20) {
+          var AcresColabs = 1;
+        }
+
+        if (NumColabs > 21 && NumColabs <= 40) {
+          var AcresColabs = 2;
+        }
+
+        if (NumColabs > 41 && NumColabs <= 80) {
+          var AcresColabs = 4;
+        }
+
+        if (NumColabs > 81 && NumColabs <= 120) {
+          var AcresColabs = 6;
+        }
+
+        if (NumColabs > 121 && NumColabs <= 180) {
+          var AcresColabs = 9;
+        }
+
+        if (NumColabs > 181 && NumColabs <= 250) {
+          var AcresColabs = 12.5;
+        }
+
+        if (NumColabs > 251 && NumColabs <= 350) {
+          var AcresColabs = 17.5;
+        }
+
+
+
+        document.getElementById('acrescolab').value = AcresColabs;
+      }
+
+    </script>
+
+
+    <script type="text/javascript">
+
+      function CalcEmpreg (){
+
+        var ValorPlan = 390;
+        var AcresCasas = document.getElementById('acrescasas').value;
+        var AcresColab = document.getElementById('acrescolab').value;
+
+        var NumCasas = document.getElementById('num_casas').value; 
+        var NumColabs = document.getElementById('colab_casa').value; 
+
+        var AcresTot = AcresCasas * AcresColab;
+        var ValorMes = ValorPlan * AcresTot;
+
+        var ValorAno = ValorMes * 12;
+        
+         document.getElementById('grandtotal_empreg').value = ValorAno.toFixed(2);
+
+      }
+
+    </script>
+
+    <script type="text/javascript">
+
+      function CalcTreina (){
+
+        var ValorPlan = 390;
+        var AcresCasas = document.getElementById('acrescasas').value;
+        var AcresColab = document.getElementById('acrescolab').value;
+
+        var NumCasas = document.getElementById('num_casas').value; 
+        var NumColabs = document.getElementById('colab_casa').value; 
+
+        var AcresTot = AcresCasas * AcresColab;
+        var ValorMes = ValorPlan * AcresTot;
+
+        var ValorAno = ValorMes * 12;
+        
+         document.getElementById('grandtotal_treina').value = ValorAno.toFixed(2);
+
+      }
+
+    </script>
+
+    <script type="text/javascript">
+
+      function CalcPonto (){
+
+        var ValorPlan = 390;
+        var AcresCasas = document.getElementById('acrescasasponto').value;
+        var AcresColab = document.getElementById('acrescolab').value;
+
+        var NumCasas = document.getElementById('num_casas').value; 
+        var NumColabs = document.getElementById('colab_casa').value; 
+
+        var AcresTot = AcresCasas * AcresColab;
+        var ValorMes = ValorPlan * AcresTot;
+
+        var ValorAno = ValorMes * 12;
+        
+         document.getElementById('grandtotal_ponto').value = ValorAno.toFixed(2);
+
+      }
+
+    </script>
+
+    <script type="text/javascript">
+
+      function CalcAdmiss (){
+
+        var ValorPlan = 390;
+        var AcresCasas = document.getElementById('acrescasas').value;
+        var AcresColab = document.getElementById('acrescolab').value;
+
+        var NumCasas = document.getElementById('num_casas').value; 
+        var NumColabs = document.getElementById('colab_casa').value; 
+
+        var AcresTot = AcresCasas * AcresColab;
+        var ValorMes = ValorPlan * AcresTot;
+
+        var ValorAno = ValorMes * 12;
+        
+         document.getElementById('grandtotal_admiss').value = ValorAno.toFixed(2);
+
+      }
+
+    </script>
+    
+    <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxEaVPmbqAofdCd2oQrT8NFlG8rqX-uivCqUVpcliqWTKDQNU3nvJuReatpJz-tehoIHQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<script type="text/javascript">
+  document.getElementById('date').value = Date();
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('.field input').keyup(function() {
+
+        var empty = false;
+        $('.field input').each(function() {
+            if ($(this).val().length == 0) {
+                empty = true;
+            }
+        });
+
+        if (empty) {
+            $('.actions button').attr('disabled', 'disabled');
+        } else {
+            $('.actions button').attr('disabled', false);
+        }
+    });
+});
+</script>
+
+<style type="text/css">
+ .form-control {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  }
+
+.display_worc {
+  background:#C2DFFF; 
+  width:100%;
+  height: 100%; 
+  margin-top: 100px ;
+}
+
+  @media only screen and (min-width: 376px) and (max-width: 750px){
+    .display_worc {
+     background: #C2DFFF;
+     width: auto;
+  height: auto; 
+  margin-top: 0px ;
+    }
+
+</style>
+
+<script> 
+     function BxhNam() {
+
+      $('#Top5').fadeIn('slow');
+
+      
+     }
+</script>
+
+<script type="text/javascript">
+  function showDiv(divId, element){
+    document.getElementById(divId).style.display = element.value != '' ? 'block' : 'none';
+  }
+</script>
+    
+
+   <script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>  
+
+    
+    <!-- End custom js for this page -->
+  </body>
+</html>
