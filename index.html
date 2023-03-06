@@ -310,13 +310,13 @@ $('#admiss_tot').fadeOut('slow');
                                   <div class="form-group" style="margin-bottom: 0px;" id="produtos">  
                                     <label for="cars">Produtos:</label>
                                     <br>
-                                    <input type="checkbox" class="empreg_opt abc" name="product_one" value="Empregabilidade">
+                                    <input type="checkbox" class="empreg_opt abc" name="produtos" value="Empregabilidade">
                                     <label for="vehicle1"> Empregabilidade</label><br>
-                                    <input type="checkbox" class="treina_opt abc" name="product_two" value="Documentação">
+                                    <input type="checkbox" class="treina_opt abc" name="produtos" value="Treinamento">
                                     <label for="vehicle2"> Treinamento</label><br>
-                                    <input type="checkbox" class="ponto_opt abc" name="product_three" value="Ponto Eletrônico">
+                                    <input type="checkbox" class="ponto_opt abc" name="produtos" value="Ponto Eletrônico">
                                     <label for="vehicle3"> Ponto Eletrônico</label><br>
-                                    <input type="checkbox" class="admiss_opt abc" name="product_four" value="Educação">
+                                    <input type="checkbox" class="admiss_opt abc" name="produtos" value="Admissão">
                                     <label for="vehicle3"> Admissão</label><br><br>
                                   </div>
 
@@ -333,7 +333,7 @@ $('#admiss_tot').fadeOut('slow');
 
                                     <div class="form-group field">  
                                       <label>Colaboradores (no total):</label>
-                                      <input type="text" id="colab_casa" value="" class="abc" name="colabas_pcasa" oninput="CalcCasasMaior() ; CalcCasasPonto(); CalcColabs(); CalcEmpreg();CalcTreina(); CalcPonto(); CalcAdmiss(); this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Ex: 30" title="Qtde. Média de Propostas" style="margin-bottom: 20px;">
+                                      <input type="text" id="colab_casa" value="" class="abc" name="colaboradores" oninput="CalcCasasMaior() ; CalcCasasPonto(); CalcColabs(); CalcEmpreg();CalcTreina(); CalcPonto(); CalcAdmiss(); this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" placeholder="Ex: 30" title="Qtde. Média de Propostas" style="margin-bottom: 20px;">
                                     </div>
 
                                   </div>
@@ -373,9 +373,6 @@ $('#admiss_tot').fadeOut('slow');
 
                                   <div id="plan_section" style="display: none" >
 
-                                  </form>  
-
-
                                   </div>
 
                                                            
@@ -384,28 +381,28 @@ $('#admiss_tot').fadeOut('slow');
                                     <div class="form-group" style="font-size: 16px; display: none; margin-bottom: 20px;" id="empreg_tot">  
                                       <label>Total Empregabilidade:</label>
                                       <label for="dinheiro" style="color: #45b8e3">R$</label>
-                                      <input type="text" id="grandtotal_empreg" name="valor_tot_recru" placeholder="0" title="Total" readonly="true" style=" background-color: white; border: 1px solid transparent; pointer-events: none; color: #45b8e3; font-size: 16px">
+                                      <input type="text" id="grandtotal_empreg" name="valor_tot_empreg" placeholder="0" title="Total" readonly="true" style=" background-color: white; border: 1px solid transparent; pointer-events: none; color: #45b8e3; font-size: 16px">
                                       <br><b style="font-size: 14px;"><i>*Taxa de implementação cobrada a parte</i></b>
                                     </div>
 
                                     <div class="form-group" style="font-size: 16px; display: none; margin-bottom: 20px;" id="treina_tot">  
                                       <label>Total Treinamento:</label>
                                       <label for="dinheiro" style="color: #45b8e3">R$</label>
-                                      <input type="text" id="grandtotal_treina" placeholder="0" name="valor_tot_doc" title="Total" readonly="true" style=" background-color: white; border: 1px solid transparent; pointer-events: none; color: #45b8e3; font-size: 16px">
+                                      <input type="text" id="grandtotal_treina" placeholder="0" name="valor_tot_treina" title="Total" readonly="true" style=" background-color: white; border: 1px solid transparent; pointer-events: none; color: #45b8e3; font-size: 16px">
                                       <br><b style="font-size: 14px;"><i>*Taxa de implementação cobrada a parte</i></b>
                                     </div>
 
                                     <div class="form-group" style="font-size: 16px; display: none; margin-bottom: 20px;" id="ponto_tot">  
                                       <label>Total Ponto Eletrônico:</label>
                                       <label for="dinheiro" style="color: #45b8e3">R$</label>
-                                      <input type="text" id="grandtotal_ponto" placeholder="0" title="Total" name="valor_tot_onb" readonly="true" style="background-color: white; border: 1px solid transparent; pointer-events: none; color: #45b8e3; font-size: 16px">
+                                      <input type="text" id="grandtotal_ponto" placeholder="0" title="Total" name="valor_tot_ponto" readonly="true" style="background-color: white; border: 1px solid transparent; pointer-events: none; color: #45b8e3; font-size: 16px">
                                       <br><b style="font-size: 14px;"><i>*Taxa de implementação cobrada a parte</i></b>
                                     </div>
 
                                     <div class="form-group" style="font-size: 16px; display: none;" id="admiss_tot">  
                                       <label>Total Admissão:</label>
                                       <label for="dinheiro" style="color: #45b8e3">R$</label>
-                                      <input type="text" id="grandtotal_admiss" name="valor_tot_edu" placeholder="0" title="Total" readonly="true" style="background-color: white; border: 1px solid transparent; pointer-events: none; color: #45b8e3; font-size: 16px">
+                                      <input type="text" id="grandtotal_admiss" name="valor_tot_admiss" placeholder="0" title="Total" readonly="true" style="background-color: white; border: 1px solid transparent; pointer-events: none; color: #45b8e3; font-size: 16px">
                                       <br><b style="font-size: 14px;"><i>*Taxa de implementação cobrada a parte</i></b>
                                     </div>
 
@@ -467,6 +464,7 @@ $('#admiss_tot').fadeOut('slow');
                                   </td>
                                 </tr>
                               </table>
+                          </form> 
                               <table style="margin: 20px auto 10px auto;" cellpadding="0" cellspacing="0" border="0">
                                 <tr>
                                   <td style="font-family: Roboto;font-size: 14px;font-weight: normal;font-style: normal;font-stretch: normal;line-height: normal;letter-spacing: normal;color: black; text-align: center;"> Copyright © 2022 WORC. All rights reserved.</td>
@@ -714,7 +712,7 @@ $('#admiss_tot').fadeOut('slow');
     </script>
     
     <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxEaVPmbqAofdCd2oQrT8NFlG8rqX-uivCqUVpcliqWTKDQNU3nvJuReatpJz-tehoIHQ/exec'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw9AYHCvjDmfYhVwmS5-RBiWLlujYRrnrs-_6VYY0zBlpU51ywu5mpg8dChoeCye3AP/exec'
   const form = document.forms['submit-to-google-sheet']
 
   form.addEventListener('submit', e => {
