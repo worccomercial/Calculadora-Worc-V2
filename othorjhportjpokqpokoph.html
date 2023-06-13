@@ -709,6 +709,10 @@ $('#admiss_tot').fadeOut('slow');
           var AcresCasas = 1.3;
         }
 
+         if (NumCasas > 50) {
+          var AcresCasas = ((NumCasas - 50)*0.0016+1.3);
+        }
+
 
 
         document.getElementById('acrescasas').value = AcresCasas;
@@ -919,6 +923,10 @@ $('#admiss_tot').fadeOut('slow');
           var AcresCasas = 2.1;
         }
 
+        if (NumCasas > 50) {
+          var AcresCasas = ((NumCasas - 50)*0.01+2.1);
+        }
+
 
 
         document.getElementById('acrescasasponto').value = AcresCasas;
@@ -929,19 +937,19 @@ $('#admiss_tot').fadeOut('slow');
         var NumColabs = document.getElementById('colab_casa').value; 
 
         if (NumColabs == 1) {
-          var AcresColabs = 0.12;
+          var AcresColabs = 0.6;
         }
 
         if (NumColabs == 2) {
-          var AcresColabs = 0.24;
+          var AcresColabs = 0.6;
         }
 
         if (NumColabs == 3) {
-          var AcresColabs = 0.36;
+          var AcresColabs = 0.6;
         }
 
         if (NumColabs == 4) {
-          var AcresColabs = 0.48;
+          var AcresColabs = 0.6;
         }
 
         if (NumColabs == 5) {
@@ -2328,6 +2336,9 @@ $('#admiss_tot').fadeOut('slow');
           var AcresColabs = 12;
         }
 
+        if (NumColabs > 350) {
+          var AcresColabs = ((NumColabs - 350)*0.04+12);
+        }
 
 
         document.getElementById('acrescolab').value = AcresColabs;
